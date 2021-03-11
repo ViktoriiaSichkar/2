@@ -1,0 +1,38 @@
+.navigation{
+    width: 20%;
+    height: 100vh;
+    padding: 0 20px;
+    position: fixed;
+    left: 0;
+    background-color: #3a2256;
+
+    &__container{
+        @include flex(column, center, flex-end);
+        height: 100%;
+    }
+        
+    &__content{
+        width: 80%;
+        color: #b18cb8;
+    }  
+
+    &_item{
+        margin-top: 30px;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 3;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.288);
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+        
+    &_item:hover{
+        color: white;
+        border-bottom: 2px solid #ba5de1;
+    }
+        
+     
+}
+
+

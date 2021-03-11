@@ -1,0 +1,45 @@
+@media screen and (max-width: 480px){
+    .navigation{
+        display: none;
+    }
+    .box-blue .section{
+        @include flex(column, center, center);
+        height: 100%;
+        &-container-photo{
+            margin: 0;
+            width: 100%;
+            .icon-photo{
+                height: 400px;
+            }
+        } 
+    }
+    .button{
+        width: 100%;
+    }
+    .box-pink .box-pink-table{
+        @include flex(column, center, center);
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        .description{
+            width: 100%;
+            border-right: 0;
+            padding: 20% 5% 5%;
+        }
+        .circle{
+            top: 5%;
+        }
+    }
+    .footer-registrationForm{
+        @include flex(column, center, flex-start);
+    }
+    .form{
+        width: 100%;
+        border-right: 0;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.274);
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .footer__address{
+        width: 100%;
+        padding-left: 0;
+    } 
+}

@@ -1,0 +1,102 @@
+.footer-wrap{
+    padding: 5%;
+    background-color: #5e42a6;
+}
+    
+
+.footer-registrationForm{
+    display: flex;
+    width: 100%;
+}
+
+.form{
+    width: 70%;
+    padding-right: 30px;
+    border-right: 2px solid rgba(255, 255, 255, 0.274);
+    input, textarea{
+        margin-top: 15px;
+        padding: 10px;
+        outline: none;
+        background-color: rgba(212, 212, 212, 0.137);
+        border: 2px solid rgba(255, 255, 255, 0.274);
+        border-radius: 5px;
+        font-size: 18px;
+        &:focus{
+           border: 2px solid white;
+       }
+    }
+}
+
+.input-name{
+    @include flex(row, space-between, flex-start);
+}
+
+.name-child{
+    width: 45%;
+    @include flex(column, flex-start, flex-start);
+    &:nth-child(2){
+        padding-right: 0;
+    }
+    input{
+        height: 40px;
+        width: 100%;
+    }
+}
+
+.footer-textarea{
+    @include flex(column, flex-start, flex-start);
+    padding-top: 30px;
+    textarea{
+        width: 100%;
+    }
+}
+
+.footer__address{
+    width: 30%;
+    padding-left: 30px;
+}
+.footer__address--navigation{
+    margin: 0;
+    width: 100%;
+    li{
+        padding-top: 15px;
+        span, a{
+            color: rgba(255, 255, 255, 0.671);
+        }
+    }
+}
+
+.footer__icon{
+    width: 60%;
+    padding-top: 15px;
+    @include flex(row, space-between, center); 
+}
+
+.fab{
+    font-size: 20px;
+    &:hover{
+        color: white;
+    }
+} 
+
+.footer__inner{
+    background-color: #483774;
+    padding: 2%;
+}
+
+.footer__inner-list{
+    @include flex(row, flex-start, center);
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 10px;
+    
+}
+.footer-list{
+    padding-right: 10px;
+    &:after{
+        content: "|";
+        padding-left: 10px;
+    }
+}
+.footer-list:last-of-type::after{
+    content: "";
+}

@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px){
+    .navigation{
+        top: 0;
+        width: 100%;
+        height: 50px;
+        z-index: 3;
+        &__container{
+            @include flex(row, center, flex-end);
+        }
+        &__content{
+            @include flex(row, space-around, center);
+        }
+    }
+    .main__container{
+        margin: 0;
+        width: 100%;
+        position: relative;
+    }
+    .description{
+        padding: 2% 2% 2% 15%;
+    }
+    .section-container-photo{
+        width: 50%;
+    }
+
+}
