@@ -74,14 +74,16 @@
         @include flex(row, center, center);
         width: 100%;
         flex-wrap: wrap;
+        flex-shrink: 2;
         background-color: rgba(207, 145, 207, 0.164);
         border: 1px solid rgba(255, 255, 255, 0.473);
     } 
 }
     
 .description {
-    padding: 2% 2% 2% 15%;
+    padding: 2% 2% 2% 10%;
     width: 50%;
+    height: 250px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.473);
     position: relative;
 
