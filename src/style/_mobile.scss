@@ -4,13 +4,9 @@
     }
     .box-blue .section{
         @include flex(column, center, center);
-        height: 100%;
         &-container-photo{
             margin: 0;
             width: 100%;
-            .icon-photo{
-                height: 400px;
-            }
         } 
     }
     .button{
@@ -21,10 +17,8 @@
         border: 1px solid rgba(255, 255, 255, 0.473);
         .description{
             width: 100%;
-            height: 100%;
             border-right: 0;
-            padding: 65px 10px 10px;
-           
+            padding: 65px 10px 10px;   
         }
         .circle{
             top: 5%;

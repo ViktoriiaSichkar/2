@@ -31,14 +31,9 @@
 }
 
 .section{
-    height: calc(100vh/3);
-    width: 100%;
     @include flex(row, flex-start, center);
-
     &-container-photo{
         width: 30%;
-        height: 100%;
-        margin-right: 35px;
     }
     &:nth-child(1){
         background-color: #7a7ae0;
@@ -51,15 +46,16 @@
     }
     &-container-text{
         padding: 5%;
-    }
-        
+    }      
+}
+
+.icon-photo{
+    min-height: 380px;
+    display: block;
 }
 @each $key, $value in $photo {
     .icon-#{$key} {
         background-image: url($value);
-        height: 100%;
-        width: 100%;
-        display: inline-block;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -83,7 +79,6 @@
 .description {
     padding: 2% 2% 2% 10%;
     width: 50%;
-    height: 250px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.473);
     position: relative;
 
